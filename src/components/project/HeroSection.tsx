@@ -41,6 +41,20 @@ export function HeroSection({ title, description }: HeroSectionProps) {
         >
           <a
             href="#screenshots"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('screenshots');
+              if (element) {
+                const headerOffset = 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
             className="group relative inline-flex items-center justify-center px-8 py-4 overflow-hidden rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 transition-all duration-300 hover:scale-105"
           >
             <span className="relative z-10 text-white font-medium">View Screenshots</span>

@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Brainy",
     description: "English learning app with flashcards and spaced repetition system.",
-    image: "/images/project2.png",
+    image: "/images/project3.png",
     tech: ["React Native", "Redux", "TypeScript", "PHP"],
     link: "https://github.com/ngodat213/brainy_react_native"
   }

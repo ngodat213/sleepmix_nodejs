@@ -19,7 +19,14 @@ export default function ProjectPage() {
     setActiveSection(section);
     const element = document.getElementById(section);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 80; // Adjust this value based on your header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -32,7 +39,10 @@ export default function ProjectPage() {
           }
         });
       },
-      { threshold: 0.5 }
+      { 
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+        rootMargin: '-80px 0px 0px 0px' // Adjust this value to match headerOffset
+      }
     );
 
     const sections = document.querySelectorAll('section[id]');
