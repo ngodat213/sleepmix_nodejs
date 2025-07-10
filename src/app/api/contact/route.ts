@@ -1,48 +1,35 @@
 import { NextResponse } from 'next/server';
-import sgMail from '@sendgrid/mail';
-
-// Initialize SendGrid with your API key
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
+import { sendEmail } from '@/lib/mailer';
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
-    const { name, email, subject, message } = body;
+    const { name, email, subject, message } = await request.json();
 
-    // Validate input
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'All fields are required' },
         { status: 400 }
       );
     }
 
-    // Email template
-    const msg = {
-      to: process.env.CONTACT_EMAIL, // Your email address
-      from: process.env.SENDGRID_FROM_EMAIL, // Verified sender email
-      subject: `New Contact Form Submission: ${subject}`,
+    // Send email using our mailer
+    await sendEmail({
+      to: 'ngodat.it213@gmail.com',
+      subject: `Contact Form: ${subject}`,
       html: `
-        <h3>New Contact Form Submission</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <h2>New Contact Form Submission</h2>
+        <p><strong>From:</strong> ${name} (${email})</p>
         <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
+        <h3>Message:</h3>
         <p>${message}</p>
-      `,
-    };
+      `
+    });
 
-    // Send email
-    await sgMail.send(msg);
-
-    return NextResponse.json(
-      { message: 'Email sent successfully' },
-      { status: 200 }
-    );
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending contact email:', error);
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: 'Failed to send message' },
       { status: 500 }
     );
   }
