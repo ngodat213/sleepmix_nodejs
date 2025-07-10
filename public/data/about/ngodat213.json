@@ -1,0 +1,71 @@
+{
+  "title": "ABOUT ME",
+  "summary": {
+    "title": "Summary",
+    "content": "I am a dedicated Flutter Developer with a strong focus on building high-performance cross-platform applications. Passionate about creating seamless user experiences, I quickly adapt to new technologies and continuously improve my skills. My goal is to contribute to innovative projects that deliver high-quality and efficient mobile solutions."
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "Hutech University",
+        "degree": "Software Engineering",
+        "period": "Oct 2021 - present",
+        "details": [
+          "Information technology at HUTECH University.",
+          "I have some basic certifications in programming and experience participating in programming competitions like the Olympics and participating in algorithm sites Codelearn.io. Besides, I have the ability to self-study, teamwork, and the ability to withstand work pressure."
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "Di4l",
+        "role": "Internship Flutter Developer",
+        "period": "July 2024 - present",
+        "skills": [
+          "Flutter",
+          "Dart",
+          "Firebase",
+          "VietMap",
+          "GetX",
+          "MVVM",
+          "FCM",
+          "Firebase",
+          "Google Map",
+          "Provider"
+        ],
+        "achievements": [
+          "Developed a multiple tenancy delivery app, optimizing data segmentation, performance.",
+          "Built ERP and ecommerce modules, integrating business management and transactions.",
+          "Integrated Vietmap and Google Maps for location tracking and route optimization.",
+          "Worked with Firebase for real-time data synchronization and RESTful APIs for backend communication."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "items": [
+      {
+        "name": "Kiwis",
+        "skills": [
+          "Flutter",
+          "Dart",
+          "Firebase",
+          "VietMap",
+          "AWS",
+          "GetX",
+          "NodeJs",
+          "MySQL",
+          "Socket",
+          "FCM",
+          "Cloudinary"
+        ],
+        "description": "A comprehensive social networking and travel management application that allows users to plan trips, share experiences, and manage group expenses."
+      }
+    ]
+  }
+} 

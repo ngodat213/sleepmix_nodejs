@@ -1,0 +1,31 @@
+{
+  "features": [
+    {
+      "id": "natural-sleep-sounds",
+      "icon": {
+        "path": "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z",
+        "strokeWidth": 2
+      },
+      "title": "Natural Sleep Sounds",
+      "description": "High-quality recordings of rain, ocean waves, and white noise to help you fall asleep naturally. Each sound is carefully mastered for the perfect sleeping environment."
+    },
+    {
+      "id": "custom-sound-mix",
+      "icon": {
+        "path": "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
+        "strokeWidth": 2
+      },
+      "title": "Custom Sound Mix",
+      "description": "Create your perfect ambiance by mixing multiple sounds with individual volume controls. Save your favorite combinations for quick access."
+    },
+    {
+      "id": "smart-sleep-timer",
+      "icon": {
+        "path": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+        "strokeWidth": 2
+      },
+      "title": "Smart Sleep Timer",
+      "description": "Set a timer to gradually fade out your sounds, ensuring peaceful transitions into sleep. Wake up naturally with gentle volume increase."
+    }
+  ]
+} 

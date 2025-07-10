@@ -1,173 +1,98 @@
-export default function PrivacyPolicy() {
+'use client';
+
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { Privacy } from '@/types/privacy';
+
+export default function PrivacyList() {
+  const [privacies, setPrivacies] = useState<Privacy[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPrivacies = async () => {
+      try {
+        const response = await fetch('/data/privacy/index.json');
+        if (!response.ok) {
+          throw new Error('Failed to load privacy policies');
+        }
+        const data = await response.json();
+        setPrivacies(data);
+      } catch (err) {
+        console.error('Error loading privacy policies:', err);
+        setPrivacies([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPrivacies();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-[#0F0A1F] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
+  }
+
   return (
-    <main className="min-h-screen bg-[#0F0A1F]">
+    <div className="relative min-h-screen bg-[#0F0A1F] overflow-x-hidden">
+      {/* Background Effects */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-emerald-500/20"></div>
+        <div className="absolute top-1/4 left-1/4 w-[50vw] h-[50vw] bg-blue-500/20 rounded-full blur-[100px] animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[50vw] h-[50vw] bg-emerald-500/20 rounded-full blur-[100px] animate-pulse delay-700"></div>
+      </div>
+
       <div className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="backdrop-blur-sm bg-black/20 rounded-2xl p-8 border border-white/10">
-            <h1 className="text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-              Privacy Policy – SleepMix
-            </h1>
-            <p className="text-gray-300 mb-12">Last updated: July 6, 2025</p>
-            
-            <div className="space-y-12 text-gray-300">
-              <p className="mb-8">
-                SleepMix ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our Android application available on Google Play Store.
-              </p>
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mx-auto max-w-2xl"
+          >
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400"
+            >
+              Privacy Policies
+            </motion.h1>
 
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">1. Information We Collect</h2>
-                <p className="mb-4">We may collect the following personal information when you use certain features of the app:</p>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>Full name</li>
-                  <li>Email address</li>
-                  <li>Profile picture</li>
-                  <li>In-app activity data (such as usage behavior and feature interaction)</li>
-                  <li>Device information (device type, operating system version, unique device identifiers)</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">2. How We Collect Data</h2>
-                <p className="mb-4">We collect data when you:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Use specific features within the app (such as listening to sounds, selecting playlists)</li>
-                  <li>View or interact with ads or in-app purchases</li>
-                  <li>Grant permissions to the app (such as notification)</li>
-                  <li>Contact our support team</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">3. How We Use Your Data</h2>
-                <p className="mb-4">Your information is used for the following purposes:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>To analyze user behavior and improve the app experience</li>
-                  <li>To send notifications about new content or features</li>
-                  <li>To personalize advertising content</li>
-                  <li>To display ads and track their effectiveness</li>
-                  <li>To manage user purchases and subscription access</li>
-                  <li>To respond to your support requests and feedback</li>
-                  <li>To prevent fraud and ensure app security</li>
-                  <li>To comply with legal obligations</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">4. Third-Party Data Sharing</h2>
-                <p className="mb-4">We may share limited data with third-party service providers that help us operate and improve the app, including:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Firebase (Google LLC): used for analytics, cloud storage, and push notifications</li>
-                  <li>Google AdMob (Google LLC): used to serve advertisements and deliver personalized ads based on your app usage and behavior</li>
-                  <li>Google Analytics for Firebase: used to analyze user behavior, measure session time, detect crashes, and improve app performance. Analytics data is collected in an anonymized form and does not include personally identifiable information</li>
-                  <li>Google Play Services: used for app functionality and security</li>
-                </ul>
-                <p className="mt-4">
-                  These service providers are bound by their respective privacy policies and data processing agreements to protect your information.
-                </p>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">5. User Rights</h2>
-                <p className="mb-4">Under applicable data protection laws, you have the following rights:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Access your personal data</li>
-                  <li>Correct inaccurate or incomplete data</li>
-                  <li>Request deletion of your personal data</li>
-                  <li>Restrict or object to data processing</li>
-                  <li>Data portability</li>
-                  <li>Withdraw consent at any time</li>
-                  <li>Opt out of personalized ads by adjusting your device settings:
-                    <ul className="list-disc pl-6 mt-2">
-                      <li>On Android: go to Settings → Google → Ads → "Opt out of Ads Personalization"</li>
-                    </ul>
-                  </li>
-                </ul>
-                <p className="mt-4">
-                  To exercise these rights, please contact us using the information provided in the Contact Us section.
-                </p>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">6. Data Storage and Security</h2>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Data is securely stored using Firebase and Cloudinary</li>
-                  <li>We implement technical and organizational measures to protect your data from unauthorized access or modification</li>
-                  <li>Data is retained only as long as necessary for the purposes described in this policy</li>
-                  <li>We use industry-standard encryption for data transmission</li>
-                  <li>Regular security audits and updates are performed</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">7. Children's Privacy</h2>
-                <p className="mb-4">
-                  SleepMix is intended for users aged 3 years and older. We comply with the Children's Online Privacy Protection Act (COPPA) and similar regulations worldwide.
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>We do not knowingly collect personal information from children under 13 without verifiable parental consent</li>
-                  <li>Parents/guardians can review, delete, or refuse further collection of their child's information</li>
-                  <li>Child-specific content is designed to avoid collecting unnecessary personal information</li>
-                  <li>Advertising to children is limited and age-appropriate</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">8. Policy Updates</h2>
-                <p className="mb-4">
-                  We may update this Privacy Policy to reflect changes in app functionality, legal obligations, or service providers. When we make material changes:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>We will notify you through the app or by email</li>
-                  <li>The "Last updated" date at the top of this policy will be revised</li>
-                  <li>You may be asked to review and accept the updated policy</li>
-                  <li>Continued use of the app after changes constitutes acceptance</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">9. Contact Us</h2>
-                <p className="mb-4">If you have any questions, concerns, or requests related to this Privacy Policy or your personal data, please contact us at:</p>
-                <ul className="list-none space-y-2">
-                  <li>Email: <a href="mailto:ngodat.it213@gmail.com" className="text-blue-400 hover:text-blue-300">ngodat.it213@gmail.com</a></li>
-                  <li>Address: Thu Duc City, Ho Chi Minh City, Vietnam</li>
-                  <li>Developer Name: Ngo Van Tien Dat</li>
-                </ul>
-                <p className="mt-4">
-                  We will respond to your request within a reasonable timeframe and in accordance with applicable data protection laws.
-                </p>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">10. In-App Purchases and Payments</h2>
-                <p className="mb-4">
-                  SleepMix may offer in-app purchases (IAP) to unlock premium features or content. All transactions are processed securely through Google Play Billing.
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Payment processing is handled entirely by Google Play</li>
-                  <li>We do not collect or store your payment details</li>
-                  <li>Purchase history and subscription status are stored for functionality</li>
-                  <li>Refunds are handled through Google Play's refund policy</li>
-                  <li>Subscription management is available in your Google Play account settings</li>
-                </ul>
-              </section>
-
-              <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 text-white">11. Compliance with Laws</h2>
-                <p className="mb-4">
-                  This Privacy Policy complies with:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Google Play Developer Program Policies</li>
-                  <li>General Data Protection Regulation (GDPR)</li>
-                  <li>California Consumer Privacy Act (CCPA)</li>
-                  <li>Children's Online Privacy Protection Act (COPPA)</li>
-                  <li>Other applicable privacy and data protection laws</li>
-                </ul>
-              </section>
+            <div className="grid gap-6">
+              {privacies.map((privacy, index) => (
+                <motion.div
+                  key={privacy.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <Link href={`/privacy/${privacy.id}`}>
+                    <div className="group backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                      <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 mb-2">
+                        {privacy.appName}
+                      </h2>
+                      <p className="text-gray-400">
+                        Last updated: {privacy.lastUpdated}
+                      </p>
+                      <div className="mt-4 flex items-center text-blue-400 group-hover:text-emerald-400 transition-colors">
+                        <span>View Privacy Policy</span>
+                        <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </main>
+    </div>
   );
 } 

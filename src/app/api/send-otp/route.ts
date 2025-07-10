@@ -1,9 +1,7 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
 import { adminDb } from '@/lib/firebase-admin';
 import crypto from 'crypto';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { sendEmail } from '@/lib/mailer';
 
 export async function POST(request: Request) {
   try {
@@ -16,11 +14,12 @@ export async function POST(request: Request) {
       );
     }
 
-    // Check if user exists in Firestore
-    const userSnapshot = await adminDb.collection('users')
-      .where('email', '==', email)
-      .limit(1)
-      .get();
+    console.log(email);
+
+    const usersRef = adminDb.collection('users');
+    const cleanEmail = email.trim().toLowerCase();
+
+    const userSnapshot = await usersRef.where('email', '==', cleanEmail).get();
 
     if (userSnapshot.empty) {
       return NextResponse.json(
@@ -46,9 +45,8 @@ export async function POST(request: Request) {
       expiresAt: timestamp + 5 * 60 * 1000 // 5 minutes
     });
 
-    // Send email using Resend
-    await resend.emails.send({
-      from: 'SleepMix <noreply@sleepmix.app>',
+    // Send email using our mailer
+    await sendEmail({
       to: email,
       subject: 'Account Deletion OTP',
       html: `
