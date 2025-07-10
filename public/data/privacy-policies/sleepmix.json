@@ -1,0 +1,31 @@
+{
+  "id": "sleepmix",
+  "appName": "SleepMix",
+  "lastUpdated": "July 6, 2025",
+  "sections": [
+    {
+      "title": "Introduction",
+      "content": "SleepMix (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your information when you use our mobile application and related services."
+    },
+    {
+      "title": "Information We Collect",
+      "content": "We may collect the following personal information when you use our app:",
+      "items": [
+        "Email address",
+        "Device information",
+        "Usage data (e.g., app interactions, preferences)",
+        "Sleep-related data and preferences"
+      ]
+    },
+    {
+      "title": "How We Collect Data",
+      "content": "We collect information in several ways:",
+      "items": [
+        "Directly from you when you provide it",
+        "Automatically through the app while you use it",
+        "From third-party services with your consent"
+      ]
+    }
+  ],
+  "contactEmail": "privacy@sleepmix.app"
+} 

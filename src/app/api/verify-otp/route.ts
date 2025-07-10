@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminDb } from '@/lib/firebase-admin';
+import { getAuth } from 'firebase-admin/auth';
 import crypto from 'crypto';
 
 export async function POST(request: Request) {
@@ -52,13 +53,22 @@ export async function POST(request: Request) {
     // Delete the used OTP
     await adminDb.collection('otps').doc(email).delete();
 
-    // Delete user document from Firestore
-    await adminDb.collection('users').where('email', '==', email).limit(1).get()
-      .then((snapshot) => {
-        if (!snapshot.empty) {
-          snapshot.docs[0].ref.delete();
-        }
-      });
+    // Get user from Firestore to get their UID
+    const userSnapshot = await adminDb.collection('users').where('email', '==', email).get();
+    if (!userSnapshot.empty) {
+      const userData = userSnapshot.docs[0].data();
+      const userId = userSnapshot.docs[0].id;
+
+      // Delete user from Authentication
+      try {
+        await getAuth().deleteUser(userId);
+      } catch (authError) {
+        console.error('Error deleting user from Authentication:', authError);
+      }
+
+      // Delete user from Firestore
+      await userSnapshot.docs[0].ref.delete();
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

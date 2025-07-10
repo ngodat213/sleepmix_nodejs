@@ -1,0 +1,118 @@
+{
+  "id": "sleepmix",
+  "name": "SleepMix",
+  "tagline": "Your personal sleep sanctuary",
+  "description": "Discover the perfect blend of soothing sounds to help you relax, focus, or drift into peaceful sleep.",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.sleepmix",
+  
+  "hero": {
+    "title": {
+      "highlight": "Sleep",
+      "normal": "Mix"
+    },
+    "description": "Your personal sleep sanctuary. Discover the perfect blend of soothing sounds to help you relax, focus, or drift into peaceful sleep."
+  },
+
+  "screenshots": [
+    {
+      "id": 1,
+      "src": "/app-screen-1.png",
+      "alt": "App Screenshot 1",
+      "width": 400,
+      "height": 800
+    },
+    {
+      "id": 2,
+      "src": "/app-screen-2.png",
+      "alt": "App Screenshot 2",
+      "width": 400,
+      "height": 800
+    },
+    {
+      "id": 3,
+      "src": "/app-screen-3.png",
+      "alt": "App Screenshot 3",
+      "width": 400,
+      "height": 800
+    }
+  ],
+
+  "features": [
+    {
+      "id": "natural-sleep-sounds",
+      "icon": {
+        "path": "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z",
+        "strokeWidth": 2
+      },
+      "title": "Natural Sleep Sounds",
+      "description": "High-quality recordings of rain, ocean waves, and white noise to help you fall asleep naturally. Each sound is carefully mastered for the perfect sleeping environment."
+    },
+    {
+      "id": "custom-sound-mix",
+      "icon": {
+        "path": "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
+        "strokeWidth": 2
+      },
+      "title": "Custom Sound Mix",
+      "description": "Create your perfect ambiance by mixing multiple sounds with individual volume controls. Save your favorite combinations for quick access."
+    },
+    {
+      "id": "smart-sleep-timer",
+      "icon": {
+        "path": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+        "strokeWidth": 2
+      },
+      "title": "Smart Sleep Timer",
+      "description": "Set a timer to gradually fade out your sounds, ensuring peaceful transitions into sleep. Wake up naturally with gentle volume increase."
+    }
+  ],
+
+  "technologies": [
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "url": "https://flutter.dev"
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "url": "https://dart.dev"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "url": "https://firebase.google.com"
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "url": "https://developers.google.com/maps"
+    },
+    {
+      "id": "vietmapgl",
+      "name": "VietmapGL",
+      "url": "https://vietmap.vn"
+    },
+    {
+      "id": "getx",
+      "name": "GetX",
+      "url": "https://pub.dev/packages/get"
+    },
+    {
+      "id": "clean-architecture",
+      "name": "Clean Architecture",
+      "url": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+    }
+  ],
+
+  "metadata": {
+    "status": "in_development",
+    "startDate": "2024-01",
+    "platform": "Android",
+    "category": "Health & Fitness",
+    "team": {
+      "size": 1,
+      "role": "Solo Developer"
+    }
+  }
+} 

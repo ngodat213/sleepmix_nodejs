@@ -1,0 +1,61 @@
+{
+  "title": "CONTACT",
+  "subtitle": {
+    "line1": "For any enquiries, or just to",
+    "line2": "say hello, get in touch",
+    "line3": "and contact us."
+  },
+  "forms": {
+    "newProjects": {
+      "title": "New projects",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "Your Name"
+        },
+        {
+          "type": "email",
+          "placeholder": "Your Email"
+        }
+      ]
+    },
+    "generalInquiries": {
+      "title": "General inquiries",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "Message",
+          "rows": 6
+        }
+      ]
+    }
+  },
+  "info": {
+    "address": {
+      "title": "Address",
+      "content": "48A Road 494, Phuoc Long A, Thu Duc District, Ho Chi Minh City"
+    },
+    "email": {
+      "title": "My Email",
+      "content": "ngodat.it213@gmail.com",
+      "link": "mailto:ngodat.it213@gmail.com"
+    },
+    "social": {
+      "title": "Follow us",
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/ngodat213"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/ngodat213"
+        },
+        {
+          "name": "Linkedin",
+          "url": "https://linkedin.com/in/ngodat213"
+        }
+      ]
+    }
+  }
+} 

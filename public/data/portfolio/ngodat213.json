@@ -1,0 +1,221 @@
+{
+  "personal": {
+    "name": "Ngô Văn Tiến Đạt",
+    "title": "Fresher Flutter Developer",
+    "image": "/images/avatar.jpg",
+    "location": "Thu Duc City",
+    "email": "ngodat.it213@gmail.com",
+    "phone": "0399228357",
+    "social": [
+      {
+        "name": "hydracoder",
+        "url": "https://github.com/ngodat213",
+        "icon": "/icons/github.svg",
+        "isActive": true
+      },
+      {
+        "name": "ngodat213",
+        "url": "https://www.facebook.com/ngodat213",
+        "icon": "/icons/facebook.svg",
+        "isActive": false
+      },
+      {
+        "name": "hydracoder",
+        "url": "https://www.linkedin.com/in/hydracoder",
+        "icon": "/icons/linkedin.svg",
+        "isActive": false
+      }
+    ]
+  },
+  "summary": "I am a dedicated Flutter Developer with a strong focus on building high-performance cross-platform applications. Passionate about creating seamless user experiences, I quickly adapt to new technologies and continuously improve my skills. My goal is to contribute to innovative projects that deliver high-quality and efficient mobile solutions.",
+  "education": [
+    {
+      "school": "Hutech University",
+      "degree": "Software Engineering",
+      "period": "Oct 2021 - present",
+      "summary": [
+        "Information technology at HUTECH University.",
+        "I have some basic certifications in programming and experience participating in programming competitions like the Olympics and participating in algorithm sites Codelearn.io. Besides, I have the ability to self-study, teamwork, and the ability to withstand work pressure."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Di4l",
+      "role": "Internship Flutter Developer",
+      "period": "July 2024 - present",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "VietMap",
+        "GetX",
+        "MVVM",
+        "FCM",
+        "Firebase",
+        "Google Map",
+        "Provider"
+      ],
+      "summary": [
+        "Developed a multiple tenancy delivery app, optimizing data segmentation, performance.",
+        "Built ERP and ecommerce modules, integrating business management and transactions.",
+        "Integrated Vietmap and Google Maps for location tracking and route optimization.",
+        "Worked with Firebase for real-time data synchronization and RESTful APIs for backend communication."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Kiwis",
+      "thumbnail": "/images/project1.png",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "VietMap",
+        "AWS",
+        "GetX",
+        "NodeJs",
+        "MySQL",
+        "Socket",
+        "FCM",
+        "Cloudinary"
+      ],
+      "summary": [
+        "Kiwis is a personal project focused on travel management, social media, and expense tracking. It allows users to plan trips by adding destinations and using Vietmap for navigation. In addition to sharing trip photos and updates, users can manage group expenses, making it easier to track and share costs within their travel group. With real-time features and an intuitive interface, Kiwis enhances the travel experience while keeping everything organized in one place."
+      ],
+      "link": "https://github.com/ngodat213/kiwis_flutter",
+      "showOnHome": true,
+      "stats": {
+        "developmentTime": "3 Months",
+        "teamSize": "2 Members",
+        "platform": "Android",
+        "status": "Completed"
+      }
+    },
+    {
+      "name": "ECourse",
+      "thumbnail": "/images/project2.png",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "VietMap",
+        "GetX",
+        "NestJs",
+        "MongoDB",
+        "Cloudinary"
+      ],
+      "summary": [
+        "ECourse is an online course-selling application that allows users to browse and enroll in various courses. Each course includes quizzes and exams to assess users' knowledge. The app also features a progress-tracking system, enabling users to monitor their course completion status. Additionally, ECourse supports direct messaging with study groups and instructors, fostering an interactive and engaging learning environment."
+      ],
+      "link": "https://github.com/ngodat213/e_course_flutter",
+      "showOnHome": true,
+      "stats": {
+        "developmentTime": "2 Months",
+        "teamSize": "1 Member",
+        "platform": "Android",
+        "status": "In Progress"
+      }
+    },
+    {
+      "name": "Brainy",
+      "thumbnail": "/images/project2.png",
+      "skills": [
+        "React Native",
+        "Clean Architecture",
+        "Redux Toolkit",
+        "TypeScript",
+        "PHP",
+        "MySQL"
+      ],
+      "summary": [
+        "An English learning app using flashcards, vocabulary, and grammar lessons. Features personalized learning paths, smart review system (Spaced Repetition), and regular progress assessments. Contributed to UI development, state management with Redux, performance optimization, and backend API integration."
+      ],
+      "link": "https://github.com/ngodat213/brainy_react_native",
+      "showOnHome": true,
+      "stats": {
+        "developmentTime": "2 Months",
+        "teamSize": "1 Member",
+        "platform": "Android",
+        "status": "In Progress"
+      }
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Java",
+      "Dart",
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "C#",
+      "C/C++"
+    ],
+    "Technologies": [
+      "Flutter",
+      "React Native",
+      "Redux Toolkit",
+      "GetX",
+      "Provider",
+      "Clean Architecture",
+      "MVVM",
+      "MVC",
+      "RESTful API",
+      "Firebase",
+      "AWS",
+      "NodeJs",
+      "MySQL",
+      "Socket",
+      "FCM",
+      "Cloudinary",
+      "NestJs",
+      "ASP.NET"
+    ],
+    "Tools": [
+      "VS Code",
+      "Cursor",
+      "Git",
+      "Intellij",
+      "Figma",
+      "Postman",
+      "Photoshop"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "JavaScript Essentials 2",
+      "issuer": "Cisco",
+      "date": "Nov 2024",
+      "description": "Advanced algorithms and data structures certification with practical problem-solving",
+      "link": "https://www.credly.com/badges/a98838c4-c7ef-4dc4-9d96-616896b2a653/public_url"
+    },
+    {
+      "name": "JavaScript Essentials 1",
+      "issuer": "Cisco",
+      "date": "Nov 2024",
+      "description": "Fundamental understanding of JavaScript",
+      "link": "https://www.credly.com/badges/7eaebd5a-48ef-4d52-9cff-0898b717e5a4/public_url"
+    },
+    {
+      "name": "Networking Basics",
+      "issuer": "Cisco",
+      "date": "Nov 2024",
+      "description": "Fundamental understanding of Networking",
+      "link": "https://www.credly.com/badges/d8f48776-5fcb-43fc-ac9a-8fdb21a99dd0/public_url"
+    },
+    {
+      "name": "Data Visualization with R",
+      "issuer": "IBM",
+      "date": "Dec 2023",
+      "description": "Fundamental understanding of Data Visualization with R",
+      "link": "https://www.credly.com/badges/25fc16d9-3453-4a1f-b10a-b3b2cf13a798/public_url"
+    },
+    {
+      "name": "R Essentials",
+      "issuer": "IBM",
+      "date": "Dec 2023",
+      "description": "Fundamental understanding of R",
+      "link": "https://www.credly.com/badges/c14acecb-03e9-4dfc-9a6b-a80578c0c92c/public_url"
+    }
+  ]
+} 

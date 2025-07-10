@@ -1,0 +1,39 @@
+{
+  "technologies": [
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "url": "https://flutter.dev"
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "url": "https://dart.dev"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "url": "https://firebase.google.com"
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "url": "https://developers.google.com/maps"
+    },
+    {
+      "id": "vietmapgl",
+      "name": "VietmapGL",
+      "url": "https://vietmap.vn"
+    },
+    {
+      "id": "getx",
+      "name": "GetX",
+      "url": "https://pub.dev/packages/get"
+    },
+    {
+      "id": "clean-architecture",
+      "name": "Clean Architecture",
+      "url": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+    }
+  ]
+} 

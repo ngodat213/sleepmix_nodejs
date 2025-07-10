@@ -1,0 +1,25 @@
+{
+  "screenshots": [
+    {
+      "id": 1,
+      "src": "/app-screen-1.png",
+      "alt": "App Screenshot 1",
+      "width": 400,
+      "height": 800
+    },
+    {
+      "id": 2,
+      "src": "/app-screen-2.png",
+      "alt": "App Screenshot 2",
+      "width": 400,
+      "height": 800
+    },
+    {
+      "id": 3,
+      "src": "/app-screen-3.png",
+      "alt": "App Screenshot 3",
+      "width": 400,
+      "height": 800
+    }
+  ]
+} 

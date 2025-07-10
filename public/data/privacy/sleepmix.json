@@ -1,0 +1,127 @@
+{
+  "id": "sleepmix",
+  "appName": "SleepMix",
+  "lastUpdated": "July 6, 2025",
+  "sections": [
+    {
+      "title": "Introduction",
+      "content": "SleepMix (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our Android application available on Google Play Store."
+    },
+    {
+      "title": "Information We Collect",
+      "content": "We may collect the following personal information when you use certain features of the app:",
+      "items": [
+        "Full name",
+        "Email address",
+        "Profile picture",
+        "In-app activity data (such as usage behavior and feature interaction)",
+        "Device information (device type, operating system version, unique device identifiers)"
+      ]
+    },
+    {
+      "title": "How We Collect Data",
+      "content": "We collect data when you:",
+      "items": [
+        "Use specific features within the app (such as listening to sounds, selecting playlists)",
+        "View or interact with ads or in-app purchases",
+        "Grant permissions to the app (such as notification)",
+        "Contact our support team"
+      ]
+    },
+    {
+      "title": "How We Use Your Data",
+      "content": "Your information is used for the following purposes:",
+      "items": [
+        "To analyze user behavior and improve the app experience",
+        "To send notifications about new content or features",
+        "To personalize advertising content",
+        "To display ads and track their effectiveness",
+        "To manage user purchases and subscription access",
+        "To respond to your support requests and feedback",
+        "To prevent fraud and ensure app security",
+        "To comply with legal obligations"
+      ]
+    },
+    {
+      "title": "Third-Party Data Sharing",
+      "content": "We may share limited data with third-party service providers that help us operate and improve the app, including:",
+      "items": [
+        "Firebase (Google LLC): used for analytics, cloud storage, and push notifications",
+        "Google AdMob (Google LLC): used to serve advertisements and deliver personalized ads based on your app usage and behavior",
+        "Google Analytics for Firebase: used to analyze user behavior, measure session time, detect crashes, and improve app performance. Analytics data is collected in an anonymized form and does not include personally identifiable information",
+        "Google Play Services: used for app functionality and security"
+      ]
+    },
+    {
+      "title": "User Rights",
+      "content": "Under applicable data protection laws, you have the following rights:",
+      "items": [
+        "Access your personal data",
+        "Correct inaccurate or incomplete data",
+        "Request deletion of your personal data",
+        "Restrict or object to data processing",
+        "Data portability",
+        "Withdraw consent at any time",
+        "Opt out of personalized ads by adjusting your device settings"
+      ]
+    },
+    {
+      "title": "Data Storage and Security",
+      "content": "We take your data security seriously:",
+      "items": [
+        "Data is securely stored using Firebase and Cloudinary",
+        "We implement technical and organizational measures to protect your data from unauthorized access or modification",
+        "Data is retained only as long as necessary for the purposes described in this policy",
+        "We use industry-standard encryption for data transmission",
+        "Regular security audits and updates are performed"
+      ]
+    },
+    {
+      "title": "Children's Privacy",
+      "content": "SleepMix is intended for users aged 3 years and older. We comply with the Children's Online Privacy Protection Act (COPPA) and similar regulations worldwide.",
+      "items": [
+        "We do not knowingly collect personal information from children under 13 without verifiable parental consent",
+        "Parents/guardians can review, delete, or refuse further collection of their child's information",
+        "Child-specific content is designed to avoid collecting unnecessary personal information",
+        "Advertising to children is limited and age-appropriate"
+      ]
+    },
+    {
+      "title": "Policy Updates",
+      "content": "We may update this Privacy Policy to reflect changes in app functionality, legal obligations, or service providers. When we make material changes:",
+      "items": [
+        "We will notify you through the app or by email",
+        "The \"Last updated\" date at the top of this policy will be revised",
+        "You may be asked to review and accept the updated policy",
+        "Continued use of the app after changes constitutes acceptance"
+      ]
+    },
+    {
+      "title": "In-App Purchases and Payments",
+      "content": "SleepMix may offer in-app purchases (IAP) to unlock premium features or content. All transactions are processed securely through Google Play Billing.",
+      "items": [
+        "Payment processing is handled entirely by Google Play",
+        "We do not collect or store your payment details",
+        "Purchase history and subscription status are stored for functionality",
+        "Refunds are handled through Google Play's refund policy",
+        "Subscription management is available in your Google Play account settings"
+      ]
+    },
+    {
+      "title": "Compliance with Laws",
+      "content": "This Privacy Policy complies with:",
+      "items": [
+        "Google Play Developer Program Policies",
+        "General Data Protection Regulation (GDPR)",
+        "California Consumer Privacy Act (CCPA)",
+        "Children's Online Privacy Protection Act (COPPA)",
+        "Other applicable privacy and data protection laws"
+      ]
+    }
+  ],
+  "contact": {
+    "email": "ngodat.it213@gmail.com",
+    "address": "Thu Duc City, Ho Chi Minh City, Vietnam",
+    "developer": "Ngo Van Tien Dat"
+  }
+} 
